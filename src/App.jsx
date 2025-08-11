@@ -3,7 +3,7 @@ import './App.css'
 import ProductList from './components/ProductList'
 
 function App() {
-  const [products, setProducts] = useState([
+  const [products] = useState([
     {
       id: "001",
       name: "Wireless Mouse",
