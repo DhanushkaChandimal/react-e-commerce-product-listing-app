@@ -1,8 +1,10 @@
-const PorductItem = () =>{
+const PorductItem = ({item}) =>{
     return(
-        <>
-            <p>Item</p>
-        </>
+        <div>
+            <h2>{item.name}</h2>
+            <h2>{item.price}</h2>
+            <h2>{item.description}</h2>
+        </div>
     )
 }
 
