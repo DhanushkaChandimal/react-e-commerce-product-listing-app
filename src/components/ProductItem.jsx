@@ -1,9 +1,9 @@
 const PorductItem = ({item}) =>{
     return(
-        <div>
+        <div className="item">
             <h2>{item.name}</h2>
-            <h2>{item.price}</h2>
-            <h2>{item.description}</h2>
+            <p>${item.price}</p>
+            <p>{item.description}</p>
         </div>
     )
 }
