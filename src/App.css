@@ -1,3 +1,7 @@
+h1{
+  text-align: center;
+}
+
 .item{
   max-width: 400px;
   padding: 0 10px;
@@ -5,6 +9,8 @@
   border: 1px solid black;
   box-shadow: 10px 10px 20px lightgrey;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .item>h2{
