@@ -1,0 +1,15 @@
+.item{
+  max-width: 400px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 20px lightgrey;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item>h2{
+  text-align: center;
+  font-size: 1.2rem;
+}
