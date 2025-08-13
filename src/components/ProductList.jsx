@@ -6,7 +6,7 @@ const PorductList = ({products}) =>{
     // console.log(products);
     const [selectedCategory, setSelectedCategory] = useState("");
     const [filteredProducts, setFilteredProducts] = useState(products);
-    const categories = [...new Set(products.map(p => p.category))];
+    const categories = [...new Set(products.map(p => p.category))].sort((a, b) => a.localeCompare(b));
 
     const handleChange = (e) => {
         setSelectedCategory(e.target.value);
