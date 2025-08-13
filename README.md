@@ -1,12 +1,52 @@
-# React + Vite
+# E-commerce Product Listing App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React-based e-commerce product listing application built with Vite. It displays a list of products with details such as name, price, description, image.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Product list with images and details
+- Modular component structure (ProductList, ProductItem)
+- Styled with CSS
 
-## Expanding the ESLint configuration
+## Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```plaintext
+public/
+  assets/         # Product images
+src/
+  components/     # React components (ProductList, ProductItem)
+  styles/         # CSS files for components
+  App.jsx         # Main app component
+  main.jsx        # Entry point
+```
+
+## Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/DhanushkaChandimal/react-e-commerce-product-listing-app.git
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser**  
+   Visit [http://localhost:5173](http://localhost:5173) to view the app.
+
+## Dependencies
+
+- React
+- Vite
+
+## License
+
+This project is for educational purposes.
