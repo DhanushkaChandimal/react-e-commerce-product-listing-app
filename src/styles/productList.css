@@ -6,11 +6,18 @@
 
 .search-bar{
     display: flex;
-    margin: 0px 20px 10px 0px;
+    margin: 0px 20px 15px 0px;
     justify-content: space-between;
 }
 
 .search-bar > input{
     width: 100%;
     margin-right: 10px;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+
+.search-bar > select{
+    padding: 8px 10px;
+    border-radius: 8px;
 }
