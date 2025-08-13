@@ -27,19 +27,24 @@ src/
    git clone https://github.com/DhanushkaChandimal/react-e-commerce-product-listing-app.git
    ```
 
-2. **Install dependencies**
+2. **Navigate to the project directory:**
+   ```sh
+   cd react-e-commerce-product-listing-app
+   ```
+
+3. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-3. **Run the development server**
+4. **Run the development server**
 
    ```bash
    npm run dev
    ```
 
-4. **Open in browser**  
+5. **Open in browser**  
    Visit [http://localhost:5173](http://localhost:5173) to view the app.
 
 ## Dependencies
