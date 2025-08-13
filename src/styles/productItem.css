@@ -7,6 +7,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+
+.item:hover{
+  transform: translateY(-5px);
 }
 
 .item>h2{
