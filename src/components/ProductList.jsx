@@ -13,32 +13,18 @@ const PorductList = ({products}) =>{
         let categoryFilter = selectedCategory ? products.filter(p => p.category === selectedCategory) : products;
         setFilteredProducts(searchText
             ? categoryFilter.filter(
-                p => p.name.includes(searchText) || p.price.includes(searchText) || p.description.includes(searchText))
+                p => p.name.toLowerCase().includes(searchText.toLowerCase())
+                || p.price.includes(searchText)
+                || p.description.toLowerCase().includes(searchText.toLowerCase()))
             : categoryFilter);
     },[products, searchText, selectedCategory]);
-
-    const handleCtegoryChange = (event) => {
-        setSelectedCategory(event.target.value);
-        setFilteredProducts(event.target.value
-            ? products.filter(p => p.category === event.target.value)
-            : products);
-        console.log(event.target.value)
-    }
-
-    const handleSearchChange = (event) => {
-        setSearchText(event.target.value);
-        setFilteredProducts(event.target.value
-            ? products.filter(p => p.category === event.target.value)
-            : products);
-        console.log(event.target.value)
-    }
 
     return(
         <div>
             {/* Optional features: bonus challenge */}
             <div className='search-bar'>
-                <input type="text" value={searchText} onChange={handleSearchChange}/>
-                <select value={selectedCategory} onChange={handleCtegoryChange}>
+                <input type="text" value={searchText} onChange={e => setSearchText(e.target.value)}/>
+                <select value={selectedCategory} onChange={e => setSelectedCategory(e.target.value)}>
                     <option value="">All</option>
                     {categories.map((category, index) => (
                         <option key={index} value={category}>{category}</option>
