@@ -22,7 +22,7 @@ const PorductList = ({products}) =>{
         <div>
             {/* Optional features: bonus challenge */}
             <div className='search-bar'>
-                <input type="text" value={searchText} onChange={e => setSearchText(e.target.value)}/>
+                <input type="text" value={searchText} onChange={e => setSearchText(e.target.value)} placeholder="Search by name, price or description"/>
                 <select value={selectedCategory} onChange={e => setSelectedCategory(e.target.value)}>
                     <option value="">All</option>
                     {categories.map((category, index) => (
