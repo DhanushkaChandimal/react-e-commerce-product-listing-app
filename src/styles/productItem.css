@@ -12,6 +12,7 @@
 
 .item:hover{
   transform: translateY(-5px);
+  box-shadow: 15px 20px 43px rgba(0, 0, 0, 0.22);
 }
 
 .item>h2{
