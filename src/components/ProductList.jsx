@@ -3,7 +3,6 @@ import '../styles/productList.css'
 import PorductItem from './ProductItem'
 
 const PorductList = ({products}) =>{
-    // console.log(products);
     const [selectedCategory, setSelectedCategory] = useState("");
     const [searchText, setSearchText] = useState("");
     const [filteredProducts, setFilteredProducts] = useState(products);
